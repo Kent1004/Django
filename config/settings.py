@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-gitINSTALLED_APPS = [
+INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -41,6 +41,7 @@ gitINSTALLED_APPS = [
     "social_django",
     "mainapp",
     "authapp",
+    "crispy_forms",
 ]
 
 MIDDLEWARE = [
@@ -161,4 +162,6 @@ STATICFILES_DIRS = [
 MEDIA_URL = "/media/"
 
 MEDIA_ROOT = BASE_DIR / "media"
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
